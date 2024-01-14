@@ -4,13 +4,13 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
-  safelist: ["dark"],
+	safelist: ["dark"],
 	theme: {
 		container: {
 			center: true,
 			padding: "2rem",
 			screens: {
-				"2xl": "1400px"
+				"2xl": "1400px",
 			}
 		},
 		extend: {
@@ -55,7 +55,16 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: ['Geist', ...fontFamily.sans]
+			},
+			boxShadow: {
+				card: "0px 35px 120px -15px #211e35"
+			},
+			screens: {
+				xs: "450px"
+			},
+			backgroundImage: {
+				"hero-pattern": "url('/images/herobg.png')"
 			}
 		}
 	},
