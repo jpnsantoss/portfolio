@@ -6,7 +6,10 @@ import type { PrismaClient } from "@prisma/client/edge";
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			auth: import('lucia').AuthRequest;
+		}
+
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
