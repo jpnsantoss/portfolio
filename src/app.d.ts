@@ -6,24 +6,12 @@ import type { PrismaClient } from "@prisma/client/edge";
 declare global {
 	namespace App {
 		// interface Error {}
-		interface Locals {
-			auth: import('lucia').AuthRequest;
-		}
-
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
 	}
 	// eslint-disable-next-line no-var
 	var __prisma: PrismaClient;
-
-	namespace Lucia {
-		type Auth = import("$lib/server/lucia").Auth;
-		type DatabaseUserAttributes = {
-			username: string;
-		};
-		type DatabaseSessionAttributes = object;
-	}
 }
 
 export { };
