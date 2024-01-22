@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import * as Avatar from '$lib/components/ui/avatar';
 	import { buttonVariants } from '$lib/components/ui/button';
+	import { signOut } from '@auth/sveltekit/client';
 	import ModeToggle from './modeToggle.svelte';
 	const navLinks = [
 		{
@@ -43,8 +46,24 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="flex items-center gap-2">
-			<a href="/login" class={buttonVariants({ variant: 'outline', size: 'sm' })}>Log In</a>
+		<div class="flex items-center gap-4">
+			{#if $page.data.session}
+				<a
+					href="/admin"
+					class="flex items-center gap-2 text-sm text-foreground/60 hover:cursor-pointer hover:text-foreground/80"
+				>
+					{#if $page.data.session.user?.image}
+						<Avatar.Root class="h-6 w-6">
+							<Avatar.Image src={$page.data.session.user.image} alt="@shadcn" />
+							<Avatar.Fallback>AD</Avatar.Fallback>
+						</Avatar.Root>
+					{/if}
+					<span>{$page.data.session.user?.name ?? 'User'}</span>
+				</a>
+			{:else}
+				<a href="/login" class={buttonVariants({ variant: 'outline', size: 'sm' })}>Log In</a>
+			{/if}
+
 			<ModeToggle />
 		</div>
 	</div>
