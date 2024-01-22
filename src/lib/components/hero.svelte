@@ -29,9 +29,7 @@
 		<div
 			class="relative m-4 flex flex-col gap-6 text-center md:gap-8 lg:justify-center lg:gap-10 lg:text-left"
 		>
-			<h1
-				class="text-3xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:leading-[1.1]"
-			>
+			<h1 class="title">
 				Full Stack <br /> Developer & Student
 			</h1>
 			<p class="mt-2 text-muted-foreground sm:text-xl md:text-2xl">

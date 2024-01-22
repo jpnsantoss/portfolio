@@ -63,9 +63,6 @@ const config = {
 			screens: {
 				xs: "450px"
 			},
-			backgroundImage: {
-				"hero-pattern": "url('/images/herobg.png')"
-			}
 		}
 	},
 };
