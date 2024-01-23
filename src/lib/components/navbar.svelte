@@ -20,11 +20,6 @@
 	];
 
 	let active = '';
-
-	const goTop = () => {
-		active = '';
-		window.scrollTo(0, 0);
-	};
 </script>
 
 <header
@@ -32,14 +27,14 @@
 >
 	<div class="container flex max-w-screen-2xl items-center justify-between py-2">
 		<div class="flex items-center gap-8">
-			<a href="/" on:click={goTop} class="font-bold">João Santos</a>
+			<a href="/" class="font-bold">João Santos</a>
 			<ul class="hidden list-none items-center gap-4 text-sm sm:flex">
 				{#each navLinks as link}
 					<li
 						class={'transition-colors hover:text-foreground/80 ' +
 							(active === link.id ? 'text-foreground/80' : 'text-foreground/60')}
 					>
-						<a href={`#${link.id}`} on:click={() => (active = link.id)}>
+						<a href={`/${link.id}`} on:click={() => (active = link.id)}>
 							<p>{link.title}</p>
 						</a>
 					</li>

@@ -28,15 +28,6 @@
 	<slot />
 	<Footer />
 </div>
-<div
-	class="fixed bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
-></div>
-<div
-	class="fixed bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
-></div>
-<div
-	class="fixed bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,rgba(79,79,79,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(79,79,79,0.05)_1px,transparent_1px)] bg-[size:100px_100px]"
-></div>
 
 <ModeWatcher />
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />

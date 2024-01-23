@@ -26,8 +26,8 @@
 	];
 </script>
 
-<section id="about" class="flex flex-col gap-12 py-20 lg:py-32">
-	<div class="flex flex-col items-center gap-8 text-center">
+<section id="about" class="flex flex-col gap-8 py-4">
+	<div class="flex flex-col items-center gap-4 text-center">
 		<h2
 			class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:leading-[1.1]"
 		>
@@ -45,7 +45,7 @@
 	</div>
 	<div class="mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-4 md:grid-cols-3">
 		{#each services as service, i}
-			<div class="flex flex-col items-center gap-4 rounded-md border px-4 py-8 text-center">
+			<div class="flex flex-col items-center gap-4 rounded-md border-2 px-4 py-8 text-center">
 				<svelte:component this={service.icon} class="h-12 w-12" />
 				<h2 class="text-xl font-semibold">
 					{service.title}
