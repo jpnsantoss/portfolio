@@ -24,7 +24,7 @@
 	];
 </script>
 
-<header class="relative my-16 gap-10 rounded-md border py-8 sm:py-32 lg:my-32">
+<header class="relative mt-16 gap-10 rounded-md border py-8 sm:py-32 lg:mt-32">
 	<div class="flex flex-col lg:justify-center">
 		<div class="relative m-4 flex flex-col items-center gap-6 text-center lg:justify-center">
 			<div class="flex flex-col gap-2">

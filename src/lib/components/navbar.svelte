@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { buttonVariants } from '$lib/components/ui/button';
-	import { signOut } from '@auth/sveltekit/client';
 	import ModeToggle from './modeToggle.svelte';
 	const navLinks = [
 		{
@@ -10,8 +9,8 @@
 			title: 'About'
 		},
 		{
-			id: 'work',
-			title: 'Work'
+			id: 'projects',
+			title: 'Projects'
 		},
 		{
 			id: 'contact',
@@ -31,8 +30,8 @@
 			<ul class="hidden list-none items-center gap-4 text-sm sm:flex">
 				{#each navLinks as link}
 					<li
-						class={'transition-colors hover:text-foreground/80 ' +
-							(active === link.id ? 'text-foreground/80' : 'text-foreground/60')}
+						class={'transition-colors hover:text-muted-foreground ' +
+							(active === link.id ? 'text-muted-foreground' : 'text-foreground/60')}
 					>
 						<a href={`/${link.id}`} on:click={() => (active = link.id)}>
 							<p>{link.title}</p>

@@ -17,7 +17,7 @@
 
 <div class="relative z-10 mx-auto min-h-screen w-full text-sm sm:text-base">
 	<div
-		class={'fixed bottom-0 z-[10] flex w-full p-10 duration-200' +
+		class={'fixed bottom-0 z-[10] m-10 content-center duration-200' +
 			(y > 0 ? 'opacity-100' : 'pointer-events-none opacity-0')}
 	>
 		<Button on:click={goTop} variant="ghost" size="icon">

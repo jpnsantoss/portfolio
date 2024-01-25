@@ -34,10 +34,10 @@
 	];
 </script>
 
-<div class="container relative my-16 overflow-hidden rounded-md border py-16">
-	<div class="container flex max-w-screen-lg flex-col gap-8">
+<div class="container relative my-32 overflow-hidden rounded-md border py-32">
+	<div class="container flex max-w-screen-lg flex-col gap-16">
 		<div><h1 class="title">About me.</h1></div>
-		<div class="flex flex-col gap-10 border-l border-primary/40 py-8">
+		<div class="flex flex-col gap-16 border-l border-primary/40 py-8">
 			{#each timeline as item}
 				<div class="relative -ml-2 space-y-2">
 					<div class="flex items-center gap-8">
