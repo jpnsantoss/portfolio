@@ -50,7 +50,7 @@
 				<h2 class="text-xl font-semibold">
 					{service.title}
 				</h2>
-				<p>{service.description}</p>
+				<p class=" text-muted-foreground">{service.description}</p>
 				<ul class="flex w-full flex-wrap justify-center gap-2">
 					{#each service.tools as tool}
 						<Badge variant="secondary">{tool}</Badge>

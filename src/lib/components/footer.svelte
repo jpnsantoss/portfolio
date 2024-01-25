@@ -36,11 +36,15 @@
 	<div class="text-center text-sm text-muted-foreground">
 		Built & designed by <a
 			href="https://github.com/jpnsantoss"
+			target="_blank"
+			rel="noopener noreferrer"
 			class="underline transition-colors hover:text-foreground">me</a
 		>
 		. The source code is available on
 		<a
 			href="https://github.com/jpnsantoss/portfolio"
+			target="_blank"
+			rel="noopener noreferrer"
 			class="underline transition-colors hover:text-foreground">GitHub</a
 		> .
 	</div>

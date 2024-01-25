@@ -96,6 +96,14 @@
 	import Project from '$lib/components/project.svelte';
 </script>
 
+<svelte:head>
+	<title>João Santos - Portfolio</title>
+	<meta
+		name="description"
+		content="Explore the diverse range of projects developed by João Santos. Includes projects in web development, mobile apps, and more."
+	/>
+</svelte:head>
+
 <div class="container mt-16 grid gap-16 lg:mt-32">
 	<div class="flex flex-col items-center gap-4 text-center">
 		<h2 class="title md:text-5xl">My Recent Work</h2>

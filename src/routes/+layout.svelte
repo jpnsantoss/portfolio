@@ -15,6 +15,16 @@
 	}
 </script>
 
+<svelte:head>
+	<meta property="og:title" content="João Santos - Portfolio" />
+	<meta
+		property="og:description"
+		content="Explore the portfolio of João Santos, a full stack developer specializing in modern web technologies. Discover projects, skills, and experience."
+	/>
+	<meta property="og:url" content="https://jpnsantos.pt" />
+	<meta property="og:image" content="http://jpnsantos.pt/favicon.png" />
+</svelte:head>
+
 <div class="relative z-10 mx-auto min-h-screen w-full text-sm sm:text-base">
 	<div
 		class={'fixed bottom-0 z-[10] m-10 content-center duration-200' +

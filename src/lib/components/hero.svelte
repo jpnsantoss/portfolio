@@ -1,27 +1,5 @@
 <script lang="ts">
-	import { Github, Instagram, Linkedin } from 'lucide-svelte';
-	import { buttonVariants } from './ui/button';
 	import Button from './ui/button/button.svelte';
-	const socialMedia = [
-		{
-			title: 'GitHub',
-			href: 'https://github.com/jpnsantoss',
-			icon: Github,
-			highlight: true
-		},
-		{
-			title: 'Instagram',
-			href: 'https://instagram.com/jpnsantoss',
-			icon: Instagram,
-			highlight: false
-		},
-		{
-			title: 'LinkedIn',
-			href: 'https://www.linkedin.com/in/jpnsantoss/',
-			icon: Linkedin,
-			highlight: false
-		}
-	];
 </script>
 
 <header class="relative mt-16 gap-10 rounded-md border py-8 sm:py-32 lg:mt-32">

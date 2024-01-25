@@ -34,6 +34,14 @@
 	];
 </script>
 
+<svelte:head>
+	<title>João Santos - About</title>
+	<meta
+		name="description"
+		content="Learn more about João Santos. Discover his skills, experience, and journey in the field of software development."
+	/>
+</svelte:head>
+
 <div class="container relative my-32 overflow-hidden rounded-md border py-32">
 	<div class="container flex max-w-screen-lg flex-col gap-16">
 		<div><h1 class="title">About me.</h1></div>

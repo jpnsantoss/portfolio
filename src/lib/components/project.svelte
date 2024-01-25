@@ -84,6 +84,8 @@
 					<div>
 						<a
 							href={project.liveUrl}
+							target="_blank"
+							rel="noopener noreferrer"
 							class={cn(buttonVariants({ variant: 'link' }), 'm-0 h-fit p-0 text-muted-foreground')}
 							>{project.liveUrl}</a
 						>
