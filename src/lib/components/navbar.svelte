@@ -30,8 +30,8 @@
 			<ul class="hidden list-none items-center gap-4 text-sm sm:flex">
 				{#each navLinks as link}
 					<li
-						class={'transition-colors hover:text-muted-foreground ' +
-							(active === link.id ? 'text-muted-foreground' : 'text-foreground/60')}
+						class={'transition-colors hover:text-foreground ' +
+							(active === link.id ? 'text-foreground' : 'text-muted-foreground')}
 					>
 						<a href={`/${link.id}`} on:click={() => (active = link.id)}>
 							<p>{link.title}</p>
@@ -44,7 +44,7 @@
 			{#if $page.data.session}
 				<a
 					href="/admin"
-					class="flex items-center gap-2 text-sm text-foreground/60 hover:cursor-pointer hover:text-foreground/80"
+					class="flex items-center gap-2 text-sm text-muted-foreground hover:cursor-pointer hover:text-foreground"
 				>
 					{#if $page.data.session.user?.image}
 						<Avatar.Root class="h-6 w-6">
@@ -54,10 +54,7 @@
 					{/if}
 					<span>{$page.data.session.user?.name ?? 'User'}</span>
 				</a>
-			{:else}
-				<a href="/login" class={buttonVariants({ variant: 'outline', size: 'sm' })}>Log In</a>
 			{/if}
-
 			<ModeToggle />
 		</div>
 	</div>

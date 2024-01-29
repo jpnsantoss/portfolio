@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { cn } from '$lib/utils';
+	import { buttonVariants } from './ui/button';
 	import Button from './ui/button/button.svelte';
 </script>
 
@@ -13,8 +15,13 @@
 				</p>
 			</div>
 			<div class="flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-normal">
-				<Button>View Projects</Button>
-				<Button variant="outline">Resume</Button>
+				<a href="/projects" class={cn(buttonVariants())}>View Projects</a>
+				<a
+					href="/assets/documents/CV.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class={cn(buttonVariants({ variant: 'outline' }))}>View CV</a
+				>
 			</div>
 		</div>
 	</div>

@@ -4,10 +4,10 @@
 	import { buttonVariants } from './ui/button';
 
 	const socials = [
-		{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/yourusername', icon: Linkedin },
-		{ name: 'Instagram', url: 'https://www.instagram.com/yourusername', icon: Instagram },
-		{ name: 'Facebook', url: 'https://www.facebook.com/yourusername', icon: Facebook },
-		{ name: 'Github', url: 'https://github.com/yourusername', icon: Github }
+		{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/jpnsantoss', icon: Linkedin },
+		{ name: 'Instagram', url: 'https://www.instagram.com/jp.santoss_/', icon: Instagram },
+		{ name: 'Facebook', url: 'https://www.facebook.com/jpnsantoss/', icon: Facebook },
+		{ name: 'Github', url: 'https://github.com/jpnsantoss', icon: Github }
 	];
 
 	const links = [
