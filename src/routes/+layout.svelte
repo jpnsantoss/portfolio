@@ -2,6 +2,7 @@
 	import Footer from '$lib/components/footer.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 	import { ArrowUp } from 'lucide-svelte';
 	import { ModeWatcher } from 'mode-watcher';
 	import '../app.pcss';
@@ -40,4 +41,5 @@
 </div>
 
 <ModeWatcher />
+<Toaster />
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
