@@ -12,7 +12,7 @@
 
 <div class="container relative my-32 overflow-hidden rounded-md border py-32">
 	<div class="container flex max-w-screen-lg flex-col gap-16">
-		<div><h1 class="title">About me.</h1></div>
+		<div><h1 class="title">Work experience.</h1></div>
 		<div class="flex flex-col gap-16 border-l border-primary/40 py-8">
 			{#each timeline as item}
 				<div class="relative -ml-2 space-y-2">

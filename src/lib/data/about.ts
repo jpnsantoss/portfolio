@@ -3,8 +3,6 @@ import { Globe, LayoutGrid, Server } from "lucide-svelte";
 export const services = [
   {
     title: 'Web Development',
-    client: 'Web Development',
-    dateInterval: {start: '2020', end: '2022'},
     description: 'I develop beautiful, fast and responsive web applications.',
     tools: ['React', 'Svelte', 'Tailwind CSS', 'Next.js'],
     icon: Globe
@@ -12,7 +10,6 @@ export const services = [
   {
     title: 'App Development',
     description: 'I build clean and user-friendly mobile and desktop applications.',
-
     tools: ['React Native', 'Flutter', 'Tauri', 'Eletron'],
     icon: LayoutGrid
   },
@@ -26,32 +23,20 @@ export const services = [
 
 export const timeline = [
   {
-    title: 'Web Development',
+    title: 'Recruit @NIAEFEUP',
     description:
-      'I develop beautiful, fast and responsive web applications. Imagine that i type more that i should, then this should be still readable and not weird. I hope thats what it happens after i stop typing this random text jus to make this description bigger.'
+      'Developer for the personal website (using SvelteKit and SpringBoot) and for the website “Time Table Scheduler” (using NextJS and Django).'
   },
   {
-    title: 'App Development',
-    description: 'I build clean and user-friendly mobile and desktop applications.'
+    title: 'Software Manager and Developer @NORASIL',
+    description: 'Developer for the company’s software, mostly focused in the website and internal applications. Responsible for the host and maintenance of the software. I also work in IT support, whenever necessary.'
   },
   {
-    title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.'
+    title: 'Startup CEO @HOST&CODE',
+    description: 'When I was in highschool, I decided to create a startup. The focus was to host virtual private servers, websites and game servers. It gave me a lot of experience on how to manage networks, handle customers, website development, etc..'
   },
   {
-    title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.'
+    title: 'Freelance',
+    description: 'Since I was little, I have been developing some freelance work in the most varied areas, where I was able to accumulate knowledge about web development, game development, computer networks, etc...'
   },
-  {
-    title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.'
-  },
-  {
-    title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.'
-  },
-  {
-    title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.'
-  }
 ];
