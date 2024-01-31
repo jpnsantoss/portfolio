@@ -9,13 +9,13 @@ export const services = [
   },
   {
     title: 'App Development',
-    description: 'I build clean and user-friendly mobile and desktop applications.',
+    description: 'I create clean and user-friendly mobile and desktop applications.',
     tools: ['React Native', 'Flutter', 'Tauri', 'Eletron'],
     icon: LayoutGrid
   },
   {
     title: 'Backend Development',
-    description: 'I develop performant, secure and scalable backend systems.',
+    description: 'I build performant, secure and scalable backend systems.',
     tools: ['Node.js', 'Spring Boot', 'Laravel', 'Django'],
     icon: Server
   }

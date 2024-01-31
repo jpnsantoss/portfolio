@@ -9,8 +9,8 @@
 			<div class="flex flex-col gap-2">
 				<h1 class="title text-center">Full Stack Developer & Student</h1>
 				<p class="text-muted-foreground sm:text-xl md:text-2xl">
-					My passion is to build beautiful <br class="hidden sm:block" /> and functional websites and
-					applications.
+					My passion is to build not only beautiful, <br class="hidden sm:block" />but also
+					functional websites and applications.
 				</p>
 			</div>
 			<div class="flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-normal">

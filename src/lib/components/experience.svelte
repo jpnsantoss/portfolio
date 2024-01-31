@@ -10,13 +10,13 @@
 		<h2
 			class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:leading-[1.1]"
 		>
-			Hi, I'm João. Nice to meet you.
+			Hi, I'm João. Nice to meet you!
 		</h2>
 		<p class="max-w-4xl text-lg text-muted-foreground lg:leading-relaxed">
-			I'm currently studying computer science at the Faculty of Engineering, University of Porto.
-			Alongside my studies, I'm working part-time at an engineering company, where I have the
-			opportunity to apply and grow my skills as a full stack developer. I'm always eager to learn
-			and deeply passionate about what I do.
+			I'm currently studying computer science at the Faculty of Engineering of University of Porto.
+			Alongside my studies, I work part-time at an engineering company, where I have the opportunity
+			to apply and strengthen my skills as a full-stack developer. I'm always eager to learn and
+			deeply passionate about what I do.
 		</p>
 	</div>
 	<div class="flex justify-center">
