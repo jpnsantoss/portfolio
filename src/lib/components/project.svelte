@@ -12,9 +12,9 @@
 
 <Sheet.Root>
 	<Sheet.Trigger>
-		<AspectRatio ratio={16 / 10} class="overflow-hidden rounded-md bg-muted">
+		<AspectRatio ratio={16 / 10} class="overflow-hidden rounded-md border bg-muted">
 			<div class="group relative h-full w-full cursor-pointer overflow-hidden rounded-md">
-				<img src={project.imageUrl} alt="" class="rounded-md object-cover object-center" />
+				<img src={project.imageUrl} alt="" class="h-full rounded-md object-cover object-center" />
 				<div
 					class="absolute inset-0 flex translate-y-3 items-end bg-gradient-to-t from-black/80 text-white opacity-0 transition-all duration-300
         ease-in-out group-hover:translate-y-0 group-hover:opacity-100"
