@@ -9,3 +9,6 @@ The goal of this project was to learn SvelteKit, while handling authentication, 
 - Prisma
 - Nodemailer
 - Vercel Blob
+
+### Live Url
+[jpnsantos.pt](https://jpnsantos.pt)
