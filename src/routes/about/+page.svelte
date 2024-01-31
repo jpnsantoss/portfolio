@@ -1,37 +1,5 @@
-<!-- component -->
-<!-- Create By Joker Banny -->
-<script>
-	const timeline = [
-		{
-			title: 'Web Development',
-			description:
-				'I develop beautiful, fast and responsive web applications. Imagine that i type more that i should, then this should be still readable and not weird. I hope thats what it happens after i stop typing this random text jus to make this description bigger.'
-		},
-		{
-			title: 'App Development',
-			description: 'I build clean and user-friendly mobile and desktop applications.'
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.'
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.'
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.'
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.'
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.'
-		}
-	];
+<script lang="ts">
+	import { timeline } from '$lib/data/about';
 </script>
 
 <svelte:head>

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
 	import { buttonVariants } from './ui/button';
-	import Button from './ui/button/button.svelte';
 </script>
 
 <header class="relative mt-16 gap-10 rounded-md border py-8 sm:py-32 lg:mt-32">

@@ -1,25 +1,10 @@
 <script lang="ts">
+	import { socials } from '$lib/data/social';
 	import { cn } from '$lib/utils';
-	import { Facebook, Github, Instagram, Linkedin, Mail } from 'lucide-svelte';
 	import { buttonVariants } from './ui/button';
-
-	const socials = [
-		{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/jpnsantoss', icon: Linkedin },
-		{ name: 'Instagram', url: 'https://www.instagram.com/jp.santoss_/', icon: Instagram },
-		{ name: 'Facebook', url: 'https://www.facebook.com/jpnsantoss/', icon: Facebook },
-		{ name: 'Github', url: 'https://github.com/jpnsantoss', icon: Github }
-	];
-
-	const links = [
-		{ name: 'Home', url: '/' },
-		{ name: 'About', url: '/about' },
-		{ name: 'Services', url: '/services' },
-		{ name: 'Contact', url: '/contact' }
-	];
 </script>
 
 <footer class="mt-32 grid gap-4 border-t p-8">
-	<!-- social media -->
 	<div class="flex justify-center gap-6">
 		{#each socials as social}
 			<a

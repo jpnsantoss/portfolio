@@ -2,21 +2,8 @@
 	import { page } from '$app/stores';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { buttonVariants } from '$lib/components/ui/button';
+	import { navLinks } from '$lib/data/links';
 	import ModeToggle from './modeToggle.svelte';
-	const navLinks = [
-		{
-			id: 'about',
-			title: 'About'
-		},
-		{
-			id: 'projects',
-			title: 'Projects'
-		},
-		{
-			id: 'contact',
-			title: 'Contact'
-		}
-	];
 
 	let active = '';
 </script>

@@ -1,29 +1,8 @@
 <script lang="ts">
+	import { services } from '$lib/data/about';
 	import { Globe, LayoutGrid, Server } from 'lucide-svelte';
 	import Badge from './ui/badge/badge.svelte';
 	import Button from './ui/button/button.svelte';
-
-	const services = [
-		{
-			title: 'Web Development',
-			description: 'I develop beautiful, fast and responsive web applications.',
-			tools: ['React', 'Svelte', 'Tailwind CSS', 'Next.js'],
-			icon: Globe
-		},
-		{
-			title: 'App Development',
-			description: 'I build clean and user-friendly mobile and desktop applications.',
-
-			tools: ['React Native', 'Flutter', 'Tauri', 'Eletron'],
-			icon: LayoutGrid
-		},
-		{
-			title: 'Backend Development',
-			description: 'I develop performant, secure and scalable backend systems.',
-			tools: ['Node.js', 'Spring Boot', 'Laravel', 'Django'],
-			icon: Server
-		}
-	];
 </script>
 
 <section id="about" class="flex flex-col gap-8 py-4">

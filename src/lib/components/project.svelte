@@ -1,29 +1,11 @@
 <script lang="ts">
 	import { AspectRatio } from '$lib/components/ui/aspect-ratio';
 	import * as Sheet from '$lib/components/ui/sheet';
+	import type { Project } from '$lib/data/projects';
 	import { cn } from '$lib/utils';
 	import { Github, Globe } from 'lucide-svelte';
 	import Badge from './ui/badge/badge.svelte';
 	import { buttonVariants } from './ui/button';
-
-	interface Tool {
-		id: number;
-		name: string;
-		projectId: number;
-	}
-
-	interface Project {
-		id: number;
-		title: string;
-		subtitle: string;
-		description: string;
-		imageUrl: string;
-		githubUrl: string;
-		liveUrl: string;
-		createdAt: Date;
-		updatedAt: Date;
-		tools: Tool[];
-	}
 
 	export let project: Project;
 </script>
@@ -32,14 +14,14 @@
 	<Sheet.Trigger>
 		<AspectRatio ratio={16 / 10} class="overflow-hidden rounded-md bg-muted">
 			<div class="group relative h-full w-full cursor-pointer overflow-hidden rounded-md">
-				<img src={project.imageUrl} alt="" class="object-cover object-center" />
+				<img src={project.imageUrl} alt="" class="rounded-md object-cover object-center" />
 				<div
 					class="absolute inset-0 flex translate-y-3 items-end bg-gradient-to-t from-black/80 text-white opacity-0 transition-all duration-300
         ease-in-out group-hover:translate-y-0 group-hover:opacity-100"
 				>
 					<div class="flex flex-col gap-2 p-6">
 						<h3 class="text-left text-2xl font-bold">{project.title}</h3>
-						<p class="truncate text-sm text-muted-foreground">{project.subtitle}</p>
+						<p class="truncate text-left text-sm text-muted-foreground">{project.subtitle}</p>
 						<ul class="mt-1 flex w-full flex-wrap gap-2">
 							{#each project.tools as tool}
 								<Badge variant="secondary">{tool.name}</Badge>
