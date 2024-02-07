@@ -23,14 +23,13 @@
 			href="https://github.com/jpnsantoss"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="underline transition-colors hover:text-foreground">me</a
-		>
-		. The source code is available on
+			class="underline transition-colors hover:text-foreground">João Santos</a
+		>. The source code is available on
 		<a
 			href="https://github.com/jpnsantoss/portfolio"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="underline transition-colors hover:text-foreground">GitHub</a
-		> .
+		>.
 	</div>
 </footer>

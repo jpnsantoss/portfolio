@@ -25,18 +25,34 @@ export const timeline = [
   {
     title: 'Recruit @NIAEFEUP',
     description:
-      'Developer for the personal website (using SvelteKit and SpringBoot) and for the website “Time Table Scheduler” (using NextJS and Django).'
+      'Developer for the personal website (using SvelteKit and SpringBoot) and for the website “Time Table Scheduler” (using NextJS and Django).',
+    dateInterval: {
+      start: "jan 2020",
+      ent: "mar 2022"
+    }
   },
   {
     title: 'Software Manager and Developer @NORASIL',
-    description: 'Developer for the company’s software, mostly focused in the website and internal applications. Responsible for the host and maintenance of the software. I also work in IT support, whenever necessary.'
+    description: 'Developer for the company’s software, mostly focused in the website and internal applications. Responsible for the host and maintenance of the software. I also work in IT support, whenever necessary.',
+    dateInterval: {
+      start: "jan 2020",
+      ent: "mar 2022"
+    }
   },
   {
     title: 'Startup CEO @HOST&CODE',
-    description: 'When I was in highschool, I decided to create a startup. The focus was to host virtual private servers, websites and game servers. It gave me a lot of experience on how to manage networks, handle customers, website development, etc..'
+    description: 'When I was in highschool, I decided to create a startup. The focus was to host virtual private servers, websites and game servers. It gave me a lot of experience on how to manage networks, handle customers, website development, etc..',
+    dateInterval: {
+      start: "jan 2020",
+      ent: "mar 2022"
+    }
   },
   {
     title: 'Freelance',
-    description: 'Since I was little, I have been developing some freelance work in the most varied areas, where I was able to accumulate knowledge about web development, game development, computer networks, etc...'
+    description: 'Since I was little, I have been developing some freelance work in the most varied areas, where I was able to accumulate knowledge about web development, game development, computer networks, etc...',
+    dateInterval: {
+      start: "jan 2020",
+      ent: "mar 2022"
+    }
   },
 ];

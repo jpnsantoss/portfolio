@@ -20,8 +20,8 @@
 	};
 </script>
 
-<div>
-	<div class="container mt-32 flex items-center justify-center rounded-md bg-muted/40">
+<div class="container mt-32">
+	<div class="flex items-center justify-center rounded-md bg-muted/40 px-4">
 		<div class="relative flex flex-col gap-4 py-16 text-center">
 			<div class="relative mx-auto mb-8 w-fit rounded-full bg-background p-4">
 				<Mail class=" h-6 w-6" />

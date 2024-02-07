@@ -5,7 +5,9 @@
 	import { navLinks } from '$lib/data/links';
 	import ModeToggle from './modeToggle.svelte';
 
-	let active = '';
+	import * as Sheet from '$lib/components/ui/sheet';
+	import { Menu } from 'lucide-svelte';
+	let active = $page.route.id;
 </script>
 
 <header
@@ -20,7 +22,7 @@
 						class={'transition-colors hover:text-foreground ' +
 							(active === link.id ? 'text-foreground' : 'text-muted-foreground')}
 					>
-						<a href={`/${link.id}`} on:click={() => (active = link.id)}>
+						<a href={link.id} on:click={() => (active = link.id)}>
 							<p>{link.title}</p>
 						</a>
 					</li>
@@ -42,6 +44,33 @@
 					<span>{$page.data.session.user?.name ?? 'User'}</span>
 				</a>
 			{/if}
+			<Sheet.Root>
+				<Sheet.Trigger class="sm:hidden">
+					<Menu />
+				</Sheet.Trigger>
+				<Sheet.Content side="right">
+					<Sheet.Header class="">
+						<Sheet.Title>Where do you want to go?</Sheet.Title>
+						<Sheet.Description>
+							<p>Find out more about João Santos and his projects.</p>
+						</Sheet.Description>
+					</Sheet.Header>
+					<ul class="flex list-none flex-col gap-8 py-16 text-sm">
+						{#each navLinks as link}
+							<li
+								class={'transition-colors hover:text-foreground ' +
+									(active === link.id ? 'text-foreground' : 'text-muted-foreground')}
+							>
+								<a href={link.id} on:click={() => (active = link.id)}>
+									<p>{link.title}</p>
+								</a>
+							</li>
+						{/each}
+					</ul>
+					<!-- content -->
+				</Sheet.Content>
+			</Sheet.Root>
+
 			<ModeToggle />
 		</div>
 	</div>
