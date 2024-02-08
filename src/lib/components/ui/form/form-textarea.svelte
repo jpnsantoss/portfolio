@@ -1,11 +1,7 @@
 <script lang="ts">
-	import { getFormField } from "formsnap";
-	import type { HTMLTextareaAttributes } from "svelte/elements";
-	import type { TextareaGetFormField } from ".";
-	import { Textarea, type TextareaEvents } from "$lib/components/ui/textarea";
-
-	type $$Props = HTMLTextareaAttributes;
-	type $$Events = TextareaEvents;
+	import { Textarea } from '$lib/components/ui/textarea';
+	import { getFormField } from 'formsnap';
+	import type { TextareaGetFormField } from '.';
 
 	const { attrStore, value } = getFormField() as TextareaGetFormField;
 </script>

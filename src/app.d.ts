@@ -1,6 +1,6 @@
 // See https://kit.svelte.dev/docs/types#app
 
-import type { PrismaClient } from "@prisma/client/edge";
+import type { PrismaClient } from '@prisma/client/edge';
 
 // for information about these interfaces
 declare global {
@@ -14,5 +14,4 @@ declare global {
 	var __prisma: PrismaClient;
 }
 
-export { };
-
+export {};

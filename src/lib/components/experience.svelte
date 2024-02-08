@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { services } from '$lib/data/about';
-	import { Globe, LayoutGrid, Server } from 'lucide-svelte';
+	import { services } from '$lib/data/work';
 	import Badge from './ui/badge/badge.svelte';
 	import Button from './ui/button/button.svelte';
 </script>
 
-<section id="about" class="flex flex-col gap-8 py-4">
+<section class="flex flex-col gap-8 py-4">
 	<div class="flex flex-col items-center gap-4 text-center">
 		<h2
 			class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:leading-[1.1]"
@@ -23,7 +22,7 @@
 		<Button variant="outline">Discover my journey</Button>
 	</div>
 	<div class="mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-4 md:grid-cols-3">
-		{#each services as service, i}
+		{#each services as service}
 			<div class="flex flex-col items-center gap-4 rounded-md border-2 px-4 py-8 text-center">
 				<svelte:component this={service.icon} class="h-12 w-12" />
 				<h2 class="text-xl font-semibold">

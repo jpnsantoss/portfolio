@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import * as Avatar from '$lib/components/ui/avatar';
-	import { buttonVariants } from '$lib/components/ui/button';
 	import { navLinks } from '$lib/data/links';
 	import ModeToggle from './modeToggle.svelte';
 
