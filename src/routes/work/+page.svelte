@@ -22,8 +22,10 @@
 							<div
 								class="-left-24 top-0 flex gap-2 text-sm text-muted-foreground lg:absolute lg:flex-col"
 							>
-								<span>{item.dateInterval.start}</span>
-								<span class="lg:hidden">-</span>
+								<div class="flex gap-2">
+									<span>{item.dateInterval.start}</span>
+									<span>-</span>
+								</div>
 								<span>{item.dateInterval.end}</span>
 							</div>
 							<!-- Moved the date here -->
